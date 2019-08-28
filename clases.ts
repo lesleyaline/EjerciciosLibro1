@@ -7,12 +7,22 @@ class Person {
         console.log("Hi, I am " + this.name + "!");
     }
 }
-let personA = new Person("Sally");
 
-//prints "Hi, I am Sally!"
-personA.introduceSelf();
+class Friend extends Person{
+    yearsKnown: number;
+    constructor (name: string, yearsKnown: number){
+        super(name);
+        this.yearsKnown=yearsKnown;
+    }
 
-personA.name ="Mindy";
+    timeKnown(){
+        console.log("We have been friends for " + this.yearsKnown + " years.")
+    }
+}
+let friendA = new Friend("Jacob",6);
 
-//Prints "Hi, I am Mindy!"
-personA.introduceSelf();
+//Prints: Hi, I am Jacob!
+friendA.introduceSelf();
+
+//Prints: We have been friends for 6 years
+friendA.timeKnown();
