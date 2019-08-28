@@ -1,7 +1,17 @@
-var a=undefined;
-var b=null;
-var c=3;
-var d= 57;
-var e= 286;
-var f= 0xadf0d;  
-var g= "cat";
+//with strictNullChecks set to true
+let a: string =undefined; //error
+let b: string=null; //error
+let c: string= "";
+let d: string="y";
+let e: string ="building";
+let f: string =3; //error
+let g: string ="3";
+
+//with strictNullChecks set to false
+let a: string =undefined; //ok
+let b: string=null; //ok
+let c: string= "";
+let d: string="y";
+let e: string ="building";
+let f: string =3; //error
+let g: string ="3";
