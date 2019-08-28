@@ -1,9 +1,12 @@
-//output in Es5
-var e= "building";
-var f=300;
-var sentence= "The " + e + "in front of my office is " + f + " feet tall.";
-
-//output in ES6
-let e ="building";
-let f =300;
-let sentence =`The ${e} in front of my office is ${f} feet tall.`;
+// With strictNullChecks set to false
+let a: number[] = [1, 12, 93, 5];
+let b: string[] = ["a", "apricot", "mango"];
+let c: number[] = [1, "apple", "potato"]; // Error
+let d: Array<number> = [null, undefined, 10, 15];
+let e: Array<string> = ["pie", null, ""];
+// With strictNullChecks set to true
+let a: number[] = [1, 12, 93, 5];
+let b: string[] = ["a", "apricot", "mango"];
+let c: number[] = [1, "apple", "potato"]; // Error
+let d: Array<number> = [null, undefined, 10, 15]; // Error
+let e: Array<string> = ["pie", null, ""]; // Error
