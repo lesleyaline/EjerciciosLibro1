@@ -8,4 +8,11 @@ class Person {
     }
 }
 let personA = new Person("Sally");
+
+//prints "Hi, I am Sally!"
+personA.introduceSelf();
+
+personA.name ="Mindy";
+
+//Prints "Hi, I am Mindy!"
 personA.introduceSelf();
