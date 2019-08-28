@@ -5,4 +5,4 @@ function randomElem<T>(theArray: T[]):T{
 
 
 let colors:string[]= ['violet', 'indigo', 'blue','green'];
-let randomColor =randomElem(colors);
+let randomColor: number =randomElem(colors);
