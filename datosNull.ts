@@ -1,3 +1,10 @@
-let a: any = "apple";
-let b: any = 14;
-let c: any = false;
+let a : never; //ok
+let b: never=false; //error
+let c: never =null; //error
+let d: never ="monday"; //error
+
+function stuck(): neves{
+    while (true){
+        
+    }
+}
