@@ -10,6 +10,8 @@ class Person {
     }
 }
 
+let personA=new Person("Amanda",22);
+
 class Friend extends Person{
     yearsKnown: number;
     constructor (name: string, age:number, yearsKnown: number){

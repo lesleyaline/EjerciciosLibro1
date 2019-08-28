@@ -21,6 +21,7 @@ var Person = /** @class */ (function () {
     };
     return Person;
 }());
+var personA = new Person("Amanda", 22);
 var Friend = /** @class */ (function (_super) {
     __extends(Friend, _super);
     function Friend(name, age, yearsKnown) {
