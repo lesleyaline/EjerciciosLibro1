@@ -1,11 +1,11 @@
 //con strictNullChecks set to true
-let a: undefined= undefined; //ok
-let b: undefined = null; //error
-let c: number = undefined; //error
-let d: void = undefined; //ok
+let a: void= undefined; //ok
+let b: void= null; //error
+let c: void = 3; //error
+let d: void = "apple"; //error
 
 //with strict Null Checks set to false
-let a: undefined= undefined; //ok
-let b: undefined = null; //ok
-let c: number = undefined; //ok
-let d: void = undefined; //ok
+let a: void= undefined; //ok
+let b: void = null; //ok
+let c: void = 3; //error
+let d: void = "apple"; //error
